@@ -1,0 +1,145 @@
+main .post-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  padding: 16px;
+  margin-top: 8px;
+  background: #fff;
+}
+
+main .post-input div.post-text {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+main .post-input div.post-text div.profile,
+main .post-container section.post div.profile {
+  font-size: 18px;
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+}
+
+main .post-input div.post-text textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  color: #ff6f00;
+  font-size: 16px;
+}
+
+main .post-input div.post-text textarea::placeholder {
+  color: #757575;
+}
+
+main .post-input div.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+main .post-input div.actions button {
+  margin: 0;
+  margin-top: 32px;
+}
+
+main .post-input div.actions input {
+  position: absolute;
+  border: 2px solid #757575;
+  height: 32px;
+  border-radius: 32px;
+  top: 30px;
+
+  padding: 0 16px;
+
+  margin-left: calc(48px + 16px + 64px);
+}
+
+main .post-input div.actions button.btn-action {
+  height: 32px;
+  width: 95px;
+
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .post-input div.actions button:first-of-type {
+  margin-left: calc(48px + 16px);
+}
+
+main .post-container {
+  width: 100%;
+}
+
+main .post-container section.post {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  padding: 16px;
+  margin-top: 8px;
+  background: #fff;
+
+  cursor: pointer;
+}
+
+main .post-container section.post div.post-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  margin-left: 16px;
+}
+
+main .post-container section.post div.post-content div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .post-container section.post div.post-content div.content .post-name {
+  color: #ff6f00;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 4px;
+  text-transform: capitalize;
+}
+
+main .post-container section.post div.post-content div.content .post-title {
+  font-weight: 400;
+  text-transform: none;
+}
+
+main .post-container section.post div.post-content div.content p.message {
+  color: #757575;
+  font-size: 16px;
+  margin-top: 8px;
+  line-height: 24px;
+  width: 100%;
+}
+
+main .post-container section.post div.post-content div.actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 32px;
+  width: 100%;
+}
+
+main
+  .post-container
+  section.post
+  div.post-content
+  div.actions
+  div.btn-labeled
+  + div.btn-labeled {
+  margin-left: 64px;
+}
